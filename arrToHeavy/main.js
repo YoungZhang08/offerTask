@@ -20,6 +20,20 @@ function arrToDraw(arr,newArr){
 	return newArr;
 }
 
+//去重
+function arrToHeavy(arr){
+	var array = new Array;
+	array.push(arr[0]);
+
+	for(var i = 1;i < arr.length;i++)
+	{
+		if(arr[i] != array[array.length-1])
+			array.push(arr[i]);	
+	}
+	console.log(array);
+	return array;
+}
+
 
 //二维数组打平
 // function arrToDraw(arr){
@@ -39,17 +53,3 @@ function arrToDraw(arr,newArr){
 // 	console.log(arr);
 // 	return arr;
 // }
-
-//去重
-function arrToHeavy(arr){
-	var array = new Array;
-	array.push(arr[0]);
-
-	for(var i = 1;i < arr.length;i++)
-	{
-		if(arr[i] != array[array.length-1])
-			array.push(arr[i]);	
-	}
-	console.log(array);
-	return array;
-}

@@ -11,7 +11,6 @@ function arrToHeavy(arr){
 
 	for(var i = 1;i < arr.length;i++)
 	{
-		
 		if(arr[i] != array[array.length-1])
 			array.push(arr[i]);	
 	}
